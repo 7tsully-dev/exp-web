@@ -1,0 +1,72 @@
+{
+	"experiences": [{
+		"name": "Kubernetes",
+		"practice": 25,
+		"theory": 25,
+        "links": [
+            {
+                "target": "Java"
+            },
+            {
+                "target": "Linux"
+            }
+        ] 
+    },
+    {
+		"name": "Java",
+		"practice": 25,
+		"theory": 20,
+        "links": [
+            {
+                "target": "Kubernetes"
+            },
+            {
+                "target": "Linux"
+            }
+        ] 
+    },
+    {
+		"name": "Linux",
+		"practice": 25,
+		"theory": 15,
+        "links": [
+            {
+                "target": "Kubernetes"
+            },
+            {
+                "target": "Java"
+            }
+        ] 
+    },
+    {
+		"name": "ArgoCD",
+		"practice": 5,
+		"theory": 5,
+        "links": [
+            {
+                "target": "Kubernetes"
+            }
+        ] 
+    },
+    {
+		"name": "Kafka",
+		"practice": 10,
+		"theory": 15,
+        "links": [
+            {
+                "target": "Java"
+            }
+        ] 
+    },
+    {
+		"name": "Tekton",
+		"practice": 10,
+		"theory": 10,
+        "links": [
+            {
+                "target": "Kubernetes"
+            }
+        ] 
+    }
+]
+}

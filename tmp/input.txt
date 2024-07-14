@@ -1,0 +1,6 @@
+Kubernetes(25, 25)
+	ArgoCD(5, 5)
+	Tekton(10, 10)
+Java(25, 20)
+	Kafka(10, 25)
+Linux(25, 15)

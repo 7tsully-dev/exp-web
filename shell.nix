@@ -1,10 +1,6 @@
 #shell.nix
 { pkgs ? import <nixpkgs> {}}:
-with pkgs;
-let
-   # goEnv = pkgs.mkGoEnv { pwd = ./.; };
-in
-mkShell {
+with pkgs; mkShell {
  packages = [
     figlet
     lolcat
@@ -17,7 +13,7 @@ mkShell {
     bash
  ];
  shellHook = ''
-    export GOPATH="/home/stsully/go"
+    export GOPATH="/home/$USER/go"
     export GOMODCACHE="$GOPATH/pkg/mod"
     figlet Welcome to Steven\'s go dev env | lolcat
     go mod tidy

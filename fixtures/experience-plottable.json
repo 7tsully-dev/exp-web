@@ -1,0 +1,78 @@
+{
+    "nodes": [{
+        "itemStyle": {"color": "#4f19c7"},
+        "name": "Kubernetes",
+        "symbolSize": 50.0,
+        "x": 0,
+        "y": 0
+    },
+    {
+        "itemStyle": {"color": "#c71969"},
+        "name": "Tekton",
+        "symbolSize": 40.0
+    },
+    {
+        "itemStyle": {"color": "#c71969"},
+        "name": "Java",
+        "symbolSize": 40.0,
+        "x": 0,
+        "y": 0
+    },
+    {
+        "itemStyle": {"color": "#c71969"},
+        "name": "ArgoCD",
+        "symbolSize": 40.0
+    },
+    {
+        "itemStyle": {"color": "#c71969"},
+        "name": "Kafka",
+        "symbolSize": 40.0
+    },
+    {
+        "itemStyle": {"color": "#c71969"},
+        "name": "Linux",
+        "symbolSize": 40.0,
+        "x": 0,
+        "y": 0
+    }
+    ],
+
+	"links": [
+    {
+        "source": "Kubernetes",
+        "target": "Java"
+    },
+    {
+        "source": "Java",
+        "target": "Kubernetes"
+    },
+     {
+         "source": "Linux",
+         "target": "Java"
+     },
+     {
+         "source": "Java",
+         "target": "Linux"
+     },
+     {
+         "source": "Kubernetes",
+         "target": "Linux"
+     },
+     {
+         "source": "Linux",
+         "target": "Kubernetes"
+     },
+     {
+	 	"source": "Kubernetes",
+	 	"target": "ArgoCD"
+	 },
+     {
+	 	"source": "Kubernetes",
+	 	"target": "Tekton"
+	 },
+     {
+	 	"source": "Java",
+	 	"target": "Kafka"
+	 }
+    ]
+}

@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/go-echarts/examples/examples"
+	"github.com/7tsully-dev/exp-web/views"
 )
 
 func logRequest(handler http.Handler) http.Handler {
@@ -16,45 +16,13 @@ func logRequest(handler http.Handler) http.Handler {
 }
 
 func main() {
-	examplers := []examples.Exampler{
-		examples.WebGraphExamples{},
-		// examples.BarExamples{},
-		// examples.Bar3dExamples{},
-		// examples.BoxplotExamples{},
-		// examples.EffectscatterExamples{},
-		// examples.FunnelExamples{},
-		// examples.FunnelExamples{},
-		// examples.GaugeExamples{},
-		// examples.GeoExamples{},
-		// examples.GraphExamples{},
-		// examples.HeatmapExamples{},
-		// examples.KlineExamples{},
-		// examples.LineExamples{},
-		// examples.Line3dExamples{},
-		// examples.LiquidExamples{},
-		// examples.MapExamples{},
-		// examples.PageCenterLayoutExamples{},
-		// examples.PageFlexLayoutExamples{},
-		// examples.PageNoneLayoutExamples{},
-		// examples.ParallelExamples{},
-		// examples.PieExamples{},
-		// examples.RadarExamples{},
-		// //examples.CustomizeExamples{},
-		// examples.SankeyExamples{},
-		// examples.ScatterExamples{},
-		// examples.Scatter3dExamples{},
-		// examples.SunburstExample{},
-		// examples.Surface3dExamples{},
-		// examples.TreeExamples{},
-		// examples.TreeMapExamples{},
-		// examples.ThemeriverExamples{},
-		// examples.ThemeExamples{},
-		// examples.WordcloudExamples{},
-		// examples.SunburstExample{},
+
+	views := []views.Page{
+		views.ExpWebGraph{},
 	}
 
-	for _, e := range examplers {
-		e.Examples()
+	for _, v := range views {
+		v.Render()
 	}
 
 	serverPages := "true"
